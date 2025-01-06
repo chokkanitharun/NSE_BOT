@@ -17,14 +17,14 @@ def send_email_notification(user_email):
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        sender_email = "tharun16c@gmail.com"
-        sender_password = "bifl mtjw elzf uewb"
+        sender_email = "YOUR MAIL"
+        sender_password = "YOUR_PASSWORD HERE"
         server.login(sender_email, sender_password)
 
         subject = "Download Completed"
         body = "Your requested download has been completed successfully."
 
-        log_file_path = r"D:\\selenium_down\\script_log.log"
+        log_file_path = r"YOUR FILE PATH"
         total_files = 0
         downloaded_files = 0
 
